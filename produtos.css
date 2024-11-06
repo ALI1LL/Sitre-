@@ -1,0 +1,162 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte básica */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com uma fonte alternativa sans-serif */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    background-color: #f0f0f0; /* Define a cor de fundo como um cinza claro */
+}
+
+/* Header e navegação */
+header {
+    background-color: #0008ff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    /*alinhar na vertical */
+    justify-content: space-between;
+    /*alinha horizontal*/
+    padding-left: 80px;
+    /* Define um espaçamento interno de 80 pixels à esquerda do conteúdo */
+    padding-right: 80px;
+    /* Define um espaçamento interno de 80 pixels à direita do conteúdo */
+    padding-top: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte superior do conteúdo */
+    padding-bottom: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte inferior do conteúdo */
+}
+header a img {
+    height: 80px; /* Define a altura da imagem do logo */
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+header nav a{
+    color: #FFFFFF;
+    font-weight: 600; /* Define o peso da fonte como 600, ou seja, uma fonte semi-negrito */
+    padding:32px; /* Define um espaçamento interno de 32 pixels em todas as direções (topo, fundo, esquerda e direita) ao redor do conteúdo do link */
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+/* Seção de produtos (Menu) */
+#produtos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#produtos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Grid para os produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto:hover {
+    transform: translateY(-10px);
+}
+
+/* Imagem do produto */
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Nome do produto */
+.produto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Descrição do produto */
+.produto p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Preço do produto */
+.produto .preco {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Estilos para o footer */
+footer nav a{
+    color: #ffffff;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0008ff;
+    color: rgb(245, 245, 245);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #produtos h2 {
+        font-size: 28px;
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .produto h3 {
+        font-size: 20px;
+    }
+
+    .produto p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .produto h3 {
+        font-size: 18px;
+    }
+
+    .produto p {
+        font-size: 10px;
+    }
+
+    .produto .preco {
+        font-size: 18px;
+    }
+}

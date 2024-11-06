@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.restaura {
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin: 20px 0; /* Adiciona margem acima e abaixo */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+header {
+    background-color: #0008ff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    /*alinhar na vertical */
+    justify-content: space-between;
+    /*alinha horizontal*/
+    padding-left: 80px;
+    /* Define um espaçamento interno de 80 pixels à esquerda do conteúdo */
+    padding-right: 80px;
+    /* Define um espaçamento interno de 80 pixels à direita do conteúdo */
+    padding-top: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte superior do conteúdo */
+    padding-bottom: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte inferior do conteúdo */
+}
+header a img {
+    height: 80px; /* Define a altura da imagem do logo */
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+header nav a{
+    color: #FFFFFF;
+    font-weight: 600; /* Define o peso da fonte como 600, ou seja, uma fonte semi-negrito */
+    padding:32px; /* Define um espaçamento interno de 32 pixels em todas as direções (topo, fundo, esquerda e direita) ao redor do conteúdo do link */
+    text-decoration: none; /* Remove a sublinhado padrão dos links */
+}
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.hero {
+    background-image: url('https://source.unsplash.com/1600x900/?food,restaurant');
+    background-size: cover;
+    background-color: aqua;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+section {
+    margin: 40px 0;
+}
+footer nav a{
+    color: #ffffff;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0008ff;
+    color: rgb(245, 245, 245);
+}

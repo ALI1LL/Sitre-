@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif; /* Define a fonte do corpo como Arial, com uma fonte alternativa sans-serif */
+    margin: 0; /* Remove a margem padrão do corpo */
+    padding: 0; /* Remove o preenchimento padrão do corpo */
+    background-color: #f0f0f0; /* Define a cor de fundo como um cinza claro */
+}
+
+header {
+    background-color: #0008ff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    /*alinhar na vertical */
+    justify-content: space-between;
+    /*alinha horizontal*/
+    padding-left: 80px;
+    /* Define um espaçamento interno de 80 pixels à esquerda do conteúdo */
+    padding-right: 80px;
+    /* Define um espaçamento interno de 80 pixels à direita do conteúdo */
+    padding-top: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte superior do conteúdo */
+    padding-bottom: 24px;
+    /* Define um espaçamento interno de 24 pixels na parte inferior do conteúdo */
+}
+header a img {
+    height: 80px; /* Define a altura da imagem do logo como 80 pixels */
+}
+
+header nav a {
+    color: #FFFFFF; /* Define a cor do texto dos links como branco */
+    font-weight: 600px; /* Define o peso da fonte como semi-negrito */
+    padding: 32px; /* Define um espaçamento interno de 32 pixels ao redor dos links */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Muda a cor do texto dos links ao passar o mouse para amarelo */
+}
+
+.container {
+    max-width: 800px; /* Define a largura máxima do contêiner como 800 pixels */
+    margin: 40px auto; /* Centraliza o contêiner horizontalmente com uma margem de 40 pixels em cima e embaixo */
+    padding: 20px; /* Define um preenchimento interno de 20 pixels */
+    background-color: #ffffff; /* Define a cor de fundo do contêiner como branco */
+    border-radius: 8px; /* Arredonda os cantos do contêiner com um raio de 8 pixels */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao contêiner */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto dos cabeçalhos h2 */
+}
+
+.contact-form {
+    display: flex; /* Usa o layout flexível para o formulário de contato */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+}
+
+.contact-form label {
+    margin: 10px 0 5px; /* Define margens para os rótulos do formulário */
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px; /* Define um preenchimento interno de 10 pixels */
+    border: 1px solid #ccc; /* Define uma borda cinza clara */
+    border-radius: 4px; /* Arredonda os cantos dos campos de entrada */
+    margin-bottom: 15px; /* Define uma margem inferior de 15 pixels */
+    transition: border-color 0.3s; /* Adiciona uma transição suave na cor da borda */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #fb0000; /* Muda a cor da borda para vermelho ao focar nos campos */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.contact-form button {
+    padding: 10px; /* Define um preenchimento interno de 10 pixels */
+    background-color: #fb0000; /* Define a cor de fundo do botão como vermelho */
+    color: #FFFFFF; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    transition: background-color 0.3s; /* Adiciona uma transição suave na cor de fundo */
+}
+
+.contact-form button:hover {
+    background-color: #ff5733; /* Muda a cor de fundo do botão ao passar o mouse para um tom mais claro de vermelho */
+}
+
+.contact-info {
+    margin-top: 30px; /* Define uma margem superior de 30 pixels para a seção de informações de contato */
+    text-align: center; /* Centraliza o texto na seção de informações de contato */
+}
+
+.mapa-localizacao {
+    width: 100%; /* Define a largura do mapa como 100% do contêiner pai */
+    height: 900px; /* Define a altura do mapa como 900 pixels */
+    border: 0; /* Remove a borda do iframe do mapa */
+}
+
+footer {
+    background-color: #0008ff; /* Fundo branco */
+    color: #fcfafa; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    border-top: 1px solid #ddd; /* Linha superior opcional para separação */
+}
+footer nav a{
+    color:#fdfdfd;
+}
